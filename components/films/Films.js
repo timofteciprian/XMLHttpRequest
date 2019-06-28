@@ -27,7 +27,7 @@ function loadXMLDoc() {
       data.results.map((element, index) => {
         var li = document.createElement("li");
         li.setAttribute("class", "list-group-item");
-        //console.log(index);
+
         var anchorElmnt = document.createElement("Button");
         anchorElmnt.setAttribute("type", "button");
         anchorElmnt.setAttribute("class", "btn btn-primary");
@@ -37,13 +37,11 @@ function loadXMLDoc() {
         li.appendChild(anchorElmnt);
         document.getElementById("container").appendChild(li);
 
-        //console.log(detail);
         var title = document.createElement("p");
         title.setAttribute("class", "title");
         title.innerHTML = element.title;
         document.getElementById("title").appendChild(title);
 
-        //document.getElementById("title").innerHTML = element.title;
         document.getElementById("episode_id").innerHTML = element.episode_id;
         document.getElementById("opening_crawl").innerHTML =
           element.opening_crawl;
