@@ -52,5 +52,5 @@ function addElement() {
   people.appendChild(newContent);
   new_Nav.appendChild(people);
 
-  //document.bady.appendChild(new_Nav);
+  document.bady.appendChild(new_Nav);
 }
